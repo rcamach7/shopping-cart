@@ -4,35 +4,35 @@
     "make": "Lexus",
     "year": "1999" ,
     "model": "LS400",
-    "miles": 100000,
+    "miles": "100k Miles",
     "price": 5000,
-    "imageURL": "../assets/car1.jpeg"
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224462/shopping-cart-project/car1_xbopkt.jpg"
   }, 
   {
     "id": 2,
     "make": "Lexus",
     "year": "2011",
     "model": "LFA",
-    "miles": 100000,
+    "miles": "800 Miles",
     "price": 500000,
-    "imageURL": "../assets/car2.jpeg"
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224462/shopping-cart-project/car2_knz6go.jpg"
   },
   {
     "id": 3,
     "make": "Lexus",
     "year": "2015",
     "model": "RC F",
-    "miles": 36000,
+    "miles": "36k Miles",
     "price": 50998,
-    "imageURL": "../assets/car3.webp"
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224461/shopping-cart-project/car3_rqbwmt.webp"
   },
   {
     "id": 4,
     "make": "Lexus",
     "year": "2021",
     "model": "IS350 F-Sport",
-    "miles": 11000,
+    "miles": "11k Miles",
     "price": 51998,
-    "imageURL": "../assets/car4.webp"
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224461/shopping-cart-project/car4_a3ts6p.webp"
   }
 ]
