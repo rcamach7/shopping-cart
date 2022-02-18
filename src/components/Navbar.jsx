@@ -39,6 +39,7 @@ function Navbar() {
           </Link>
           <li className="dropDown-item">Browse Products</li>
           <li className="dropDown-item">About Page</li>
+          <li className="dropDown-item">My Cart</li>
         </ul>
       </nav>
     </nav>
