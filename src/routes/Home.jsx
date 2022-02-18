@@ -17,9 +17,14 @@ function Home() {
     <main className="Home">
       <section className="home-preview">
         <h2>THE 2022 LX</h2>
-        <Link to="/products" className="preview-button">
-          Browse Products
-        </Link>
+        <div className="preview-buttonContainer">
+          <Link to="/products" className="preview-button">
+            Browse Cars
+          </Link>
+          <Link to="/checkout" className="preview-button">
+            Checkout
+          </Link>
+        </div>
       </section>
 
       <section className="home-options">

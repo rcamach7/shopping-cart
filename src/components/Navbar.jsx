@@ -34,12 +34,23 @@ function Navbar() {
             to="/"
             className="dropDown-item"
             style={{ borderTop: "solid grey 1px" }}
+            onClick={toggleDropDown}
           >
             Homepage
           </Link>
-          <li className="dropDown-item">Browse Products</li>
-          <li className="dropDown-item">About Page</li>
-          <li className="dropDown-item">My Cart</li>
+          <Link
+            to="/products"
+            className="dropDown-item"
+            onClick={toggleDropDown}
+          >
+            Browse Products
+          </Link>
+          <li className="dropDown-item" onClick={toggleDropDown}>
+            About Page
+          </li>
+          <li className="dropDown-item" onClick={toggleDropDown}>
+            My Cart
+          </li>
         </ul>
       </nav>
     </nav>

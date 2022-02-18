@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "make": "lexus",
+    "model": "LS400",
+    "year": "1999" 
+  }, 
+  {
+    "id": 2,
+    "make": "lexus",
+    "model": "LFA",
+    "year": "2011" 
+  }
+]
