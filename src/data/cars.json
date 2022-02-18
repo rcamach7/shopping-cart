@@ -1,14 +1,38 @@
 [
   {
     "id": 1,
-    "make": "lexus",
+    "make": "Lexus",
+    "year": "1999" ,
     "model": "LS400",
-    "year": "1999" 
+    "miles": 100000,
+    "price": 5000,
+    "imageURL": "../assets/car1.jpeg"
   }, 
   {
     "id": 2,
-    "make": "lexus",
+    "make": "Lexus",
+    "year": "2011",
     "model": "LFA",
-    "year": "2011" 
+    "miles": 100000,
+    "price": 500000,
+    "imageURL": "../assets/car2.jpeg"
+  },
+  {
+    "id": 3,
+    "make": "Lexus",
+    "year": "2015",
+    "model": "RC F",
+    "miles": 36000,
+    "price": 50998,
+    "imageURL": "../assets/car3.webp"
+  },
+  {
+    "id": 4,
+    "make": "Lexus",
+    "year": "2021",
+    "model": "IS350 F-Sport",
+    "miles": 11000,
+    "price": 51998,
+    "imageURL": "../assets/car4.webp"
   }
 ]

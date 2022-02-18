@@ -43,7 +43,6 @@ function Home() {
       </section>
 
       <footer>
-        <p>Follow me on: </p>
         <FontAwesomeIcon className="icon" icon={faGithub} />
         <FontAwesomeIcon className="icon" icon={faFacebook} />
         <FontAwesomeIcon className="icon" icon={faLinkedin} />
