@@ -1,3 +1,104 @@
+* {
+  font-family: Courier New, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:visited,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .Home {
-  text-align: center;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  .home-preview {
+    width: clamp(320px, 100vw, 600px);
+    min-height: 400px;
+
+    background-image: url("../assets/lexusLx.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 25px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    .preview-button {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 2.5px;
+      cursor: pointer;
+    }
+  }
+
+  .home-options {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    div {
+      flex: 1;
+      text-align: center;
+      padding: 20px 0 20px 0;
+
+      display: flex;
+      flex-direction: column;
+      .icon {
+        color: black;
+        margin-bottom: 10px;
+      }
+    }
+    div:hover {
+      cursor: pointer;
+      background-color: darkgray;
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    height: 30px;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      color: grey;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .Home {
+    .home-preview {
+      width: 100%;
+      height: clamp(250px, 100vh, 500px);
+      background-image: url("../assets/lexusLx-l.webp");
+
+      h2 {
+        font-size: 35px;
+      }
+      .preview-button {
+        padding: 20px;
+      }
+    }
+  }
 }
