@@ -12,6 +12,9 @@ a {
 }
 
 .Home {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
   .home-preview {
     width: clamp(320px, 100vw, 600px);
     min-height: 400px;
@@ -54,13 +57,31 @@ a {
       display: flex;
       flex-direction: column;
       .icon {
-        color: grey;
+        color: black;
         margin-bottom: 10px;
       }
     }
     div:hover {
       cursor: pointer;
       background-color: darkgray;
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    height: 30px;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      color: grey;
+      font-size: 20px;
+      cursor: pointer;
     }
   }
 }

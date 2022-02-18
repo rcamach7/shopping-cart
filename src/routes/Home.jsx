@@ -6,6 +6,11 @@ import {
   faScrewdriverWrench,
   faFileSignature,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   return (
@@ -31,6 +36,13 @@ function Home() {
           <span>Leasing Options</span>
         </div>
       </section>
+
+      <footer>
+        <p>Follow me on: </p>
+        <FontAwesomeIcon className="icon" icon={faGithub} />
+        <FontAwesomeIcon className="icon" icon={faFacebook} />
+        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+      </footer>
     </main>
   );
 }
