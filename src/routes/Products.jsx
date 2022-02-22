@@ -1,15 +1,12 @@
 import "../scss/Products.scss";
-import data from "../data/cars.json";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
-function Products() {
-  const [cars] = useState(data);
+function Products(props) {
   return (
     <main className="Products">
-      {cars.map((car, i) => (
-        <CarBox key={i} car={car} />
+      {props.cars.map((car, i) => (
+        <CarBox key={i} car={car} updateCart={props.updateCart} />
       ))}
     </main>
   );
@@ -41,10 +38,16 @@ function CarBox(props) {
         )} : ${car.miles}`}</p>
 
         <div className="action-buttons">
-          <button style={{ backgroundColor: "rgb(130,179,67)" }}>
+          <button
+            style={{ backgroundColor: "rgb(130,179,67)" }}
+            onClick={() => props.updateCart(car.id, true)}
+          >
             Add To Cart
           </button>
-          <button style={{ backgroundColor: "rgb(233,109,108)" }}>
+          <button
+            style={{ backgroundColor: "rgb(233,109,108)" }}
+            onClick={() => props.updateCart(car.id, false)}
+          >
             Remove From Cart
           </button>
         </div>
