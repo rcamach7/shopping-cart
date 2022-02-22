@@ -76,6 +76,7 @@ a {
   footer {
     margin-top: auto;
     height: 30px;
+    font-size: 12px;
 
     background-color: white;
     color: black;
@@ -86,7 +87,6 @@ a {
     gap: 20px;
     .icon {
       color: grey;
-      font-size: 20px;
       cursor: pointer;
     }
   }
