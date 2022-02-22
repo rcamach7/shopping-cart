@@ -48,9 +48,13 @@ function Navbar() {
           <li className="dropDown-item" onClick={toggleDropDown}>
             About Page
           </li>
-          <li className="dropDown-item" onClick={toggleDropDown}>
+          <Link
+            to="/checkout"
+            className="dropDown-item"
+            onClick={toggleDropDown}
+          >
             My Cart
-          </li>
+          </Link>
         </ul>
       </nav>
     </nav>

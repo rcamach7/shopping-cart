@@ -10,7 +10,7 @@
   gap: 15px;
 }
 
-.CarBox {
+.CarProduct {
   width: 300px;
   min-height: fit-content;
 
@@ -55,6 +55,6 @@
     }
   }
 }
-.CarBox:hover {
+.CarProduct:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

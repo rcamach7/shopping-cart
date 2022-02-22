@@ -1,0 +1,66 @@
+.Checkout {
+  height: calc(100vh - 60px);
+  min-width: 320px;
+  padding-top: 10px;
+  color: grey;
+
+  h2 {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cartSummary {
+    text-align: center;
+  }
+
+  .cart-link {
+    text-align: center;
+  }
+}
+
+.CarCheckout {
+  width: clamp(320px, 95vw, 500px);
+  padding-bottom: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .carInfo {
+    display: flex;
+    width: 100%;
+
+    .carImage {
+      min-width: 125px;
+      min-height: 125px;
+      background-size: cover;
+      background-position: center;
+    }
+    .carDetails {
+      padding-left: 5px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .carPrice {
+      padding-right: 5px;
+      margin-left: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  button {
+    border: none;
+    width: 100%;
+    padding: 2px 0 2px 0;
+    color: white;
+    background-color: rgb(243, 117, 117);
+  }
+}
