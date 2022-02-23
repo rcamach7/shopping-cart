@@ -1,4 +1,4 @@
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart, faTrashCan } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CarProduct(props) {
@@ -28,16 +28,18 @@ export default function CarProduct(props) {
 
         <div className="action-buttons">
           <button
-            style={{ backgroundColor: "rgb(130,179,67)" }}
+            style={{ backgroundColor: "black", color: "white" }}
             onClick={() => props.updateCart(car, true)}
+            className="add"
           >
             Add To Cart
           </button>
           <button
             style={{ backgroundColor: "rgb(233,109,108)" }}
             onClick={() => props.updateCart(car, false)}
+            className="remove"
           >
-            Remove From Cart
+            <FontAwesomeIcon icon={faTrashCan} />
           </button>
         </div>
       </div>

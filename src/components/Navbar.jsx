@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
-function Navbar() {
+function Navbar(props) {
   const dropDownRef = useRef(null);
 
   const toggleDropDown = () => {
@@ -24,7 +24,14 @@ function Navbar() {
           <img src={logo} alt="" />
         </Link>
         <li className="navbar-toggleSubmenu" onClick={toggleDropDown}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
+          {props.numItems > 0 ? (
+            <div className="cart-count">
+              <div className="badge">
+                {props.numItems > 0 ? props.numItems : null}
+              </div>
+            </div>
+          ) : null}
         </li>
       </ul>
 

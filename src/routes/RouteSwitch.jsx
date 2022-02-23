@@ -63,7 +63,7 @@ export default function RouteSwitch() {
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar numItems={cart.length} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

@@ -1,20 +1,59 @@
 .Products {
   height: calc(100vh - 60px);
   min-width: 320px;
-  margin-top: 10px;
+  padding-top: 10px;
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+
+  .filter-options {
+    width: 300px;
+    padding: 10px 0 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    .filter-option {
+      cursor: pointer;
+    }
+  }
+
+  .products-container {
+    padding: 10px 0 10px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  footer {
+    margin-top: auto;
+    height: 30px;
+    font-size: 12px;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      color: grey;
+      cursor: pointer;
+    }
+  }
 }
 
 .CarProduct {
   width: 300px;
   min-height: fit-content;
 
-  border: solid black 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 5px;
 
   .imageContainer {
@@ -45,16 +84,26 @@
       display: flex;
       gap: 2px;
     }
-    .action-buttons button {
-      flex: 1;
-      color: white;
-      font-weight: bold;
-      border-radius: 2.5px;
-      border: none;
-      cursor: pointer;
+    .action-buttons {
+      .add,
+      .remove {
+        font-weight: bold;
+        border-radius: 2.5px;
+        border: none;
+        cursor: pointer;
+        color: white;
+      }
+      .add {
+        flex: 5;
+      }
+      .remove {
+        flex: 1;
+      }
     }
   }
+  transition: transform 0.5s;
 }
 .CarProduct:hover {
+  transform: scale(1.075);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
