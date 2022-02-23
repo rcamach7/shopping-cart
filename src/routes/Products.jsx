@@ -18,7 +18,7 @@ function Products(props) {
   const [filteredProducts, setFilteredProducts] = useState(props.cars);
 
   // If true, filters in ascending order, if false, filters in descending order.
-  const filterProducts = (ascending) => {
+  const sortByPrice = (ascending) => {
     const filtered = [...filteredProducts];
     if (ascending) {
       filtered.sort((a, b) => {
@@ -44,20 +44,51 @@ function Products(props) {
     setFilteredProducts(filtered);
   };
 
+  const filterByMake = (make) => {
+    // If user selects show all cars, we skip any code below and set products to original value.
+    if (make === "Show All") {
+      setFilteredProducts(props.cars);
+      return;
+    }
+
+    const updatedProducts = [...props.cars].filter((car) => {
+      if (car.make !== make) {
+        return false;
+      }
+      return car;
+    });
+    setFilteredProducts(updatedProducts);
+  };
+
   return (
     <main className="Products">
       <div className="filter-options">
-        <p>Price filter: </p>
-        <FontAwesomeIcon
-          icon={faArrowDown91}
-          className="filter-option"
-          onClick={() => filterProducts(false)}
-        />
-        <FontAwesomeIcon
-          icon={faArrowDown19}
-          className="filter-option"
-          onClick={() => filterProducts(true)}
-        />
+        <div className="options-price">
+          <p>Sort by price: </p>
+          <FontAwesomeIcon
+            icon={faArrowDown91}
+            className="filter-option"
+            onClick={() => sortByPrice(false)}
+          />
+          <FontAwesomeIcon
+            icon={faArrowDown19}
+            className="filter-option"
+            onClick={() => sortByPrice(true)}
+          />
+        </div>
+
+        <div className="options-make">
+          <p>Filter by make: </p>
+          <select onChange={(e) => filterByMake(e.target.value)}>
+            <option>Show All</option>
+            {/* Creates a new set of non-repeated vehicle makes based on car inventory objects, and returns each as an option in the select dropdown box */}
+            {[...new Set(props.cars.map((car) => car.make))].map(
+              (uniqueMake, i) => {
+                return <option key={i}>{uniqueMake}</option>;
+              }
+            )}
+          </select>
+        </div>
       </div>
 
       <div className="products-container">
