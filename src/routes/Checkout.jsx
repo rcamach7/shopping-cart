@@ -1,5 +1,11 @@
 import "../scss/Checkout.scss";
 import CarCheckout from "../components/CarCheckout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Checkout(props) {
   const calculateSalesTax = () => {
@@ -28,8 +34,8 @@ export default function Checkout(props) {
 
   return (
     <div className="Checkout">
-      <h2>Shopping Cart</h2>
-      <div className="cartContainer">
+      <h3 className="site-title">View And Edit Cart</h3>
+      <div className="items-container">
         {props.cart.map((cartCar, i) => {
           return (
             <CarCheckout key={i} car={cartCar} updateCart={props.updateCart} />
@@ -38,16 +44,29 @@ export default function Checkout(props) {
       </div>
 
       {props.cart.length > 0 ? (
-        <div className="cartSummary">
-          <h3>Order Summery</h3>
-          <p>
-            ({props.cart.length}) Registration Fee(s){" "}
-            {formatCurrency.format(750 * props.cart.length)}
-          </p>
-          <p>CA 7.5% Sales Tax: {formatCurrency.format(calculateSalesTax())}</p>
-          <p>Total: {formatCurrency.format(calculateTotalPrice())}</p>
+        <div className="cart-summary">
+          <div className="summary-details">
+            <h3>Order Details</h3>
+            <p>
+              ({props.cart.length}) Registration Fee(s){" "}
+              {formatCurrency.format(750 * props.cart.length)}
+            </p>
+            <p>
+              CA 7.5% Sales Tax: {formatCurrency.format(calculateSalesTax())}
+            </p>
+            <p className="details-total">
+              Total: {formatCurrency.format(calculateTotalPrice())}
+            </p>
+            <button>Purchase</button>
+          </div>
         </div>
       ) : null}
+
+      <footer>
+        <FontAwesomeIcon className="icon" icon={faGithub} />
+        <FontAwesomeIcon className="icon" icon={faFacebook} />
+        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+      </footer>
     </div>
   );
 }
