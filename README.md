@@ -2,6 +2,12 @@
 
 Clean design of an e-commerce page with shopping-cart capabilities.
 
+### Live Demo
+
+[Live Website Demo](http://rcamach7.github.io/shopping-cart/)
+
+![Website Demo](demo.png)
+
 #### Local Installation & Running
 
 ```bash

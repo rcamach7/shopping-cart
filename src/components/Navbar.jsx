@@ -20,7 +20,7 @@ function Navbar(props) {
   return (
     <nav className="Navbar">
       <ul>
-        <Link to="/" className="navbar-logo">
+        <Link to="/shopping-cart" className="navbar-logo">
           <img src={logo} alt="" />
         </Link>
         <li className="navbar-toggleSubmenu" onClick={toggleDropDown}>
@@ -38,7 +38,7 @@ function Navbar(props) {
       <nav ref={dropDownRef} className="dropDown">
         <ul>
           <Link
-            to="/"
+            to="/shopping-cart"
             className="dropDown-item"
             style={{ borderTop: "solid grey 1px" }}
             onClick={toggleDropDown}
