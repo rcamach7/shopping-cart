@@ -1,7 +1,7 @@
 import "../scss/Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
@@ -50,11 +50,8 @@ function Navbar(props) {
             className="dropDown-item"
             onClick={toggleDropDown}
           >
-            Browse Products
+            Browse Collection
           </Link>
-          <li className="dropDown-item" onClick={toggleDropDown}>
-            About Page
-          </li>
           <Link
             to="/checkout"
             className="dropDown-item"

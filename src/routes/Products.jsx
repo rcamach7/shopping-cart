@@ -9,8 +9,10 @@ import {
 import {
   faArrowDown19,
   faArrowDown91,
+  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Products(props) {
   const [filteredProducts, setFilteredProducts] = useState(props.cars);
@@ -63,6 +65,19 @@ function Products(props) {
           <CarProduct key={i} car={car} updateCart={props.updateCart} />
         ))}
       </div>
+
+      <Link to="/checkout" className="checkout-container">
+        <div className="badge">
+          <FontAwesomeIcon icon={faShoppingCart} />
+          {props.cart.length > 0 ? (
+            <div className="cart-count">
+              <div className="mini-badge">
+                {props.cart.length > 0 ? props.cart.length : null}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      </Link>
 
       <footer>
         <FontAwesomeIcon className="icon" icon={faGithub} />

@@ -1,13 +1,4 @@
-[
-  {
-    "id": 1,
-    "make": "Lexus",
-    "year": "1999" ,
-    "model": "LS400",
-    "miles": "100k Miles",
-    "price": 5000,
-    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224462/shopping-cart-project/car1_xbopkt.jpg"
-  }, 
+[ 
   {
     "id": 2,
     "make": "Lexus",
@@ -27,12 +18,66 @@
     "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224461/shopping-cart-project/car3_rqbwmt.webp"
   },
   {
-    "id": 4,
+    "id": 5,
     "make": "Lexus",
+    "year": "2022",
+    "model": "LX Base",
+    "miles": "0 Miles",
+    "price": 86900,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645579502/shopping-cart-project/lx2022_b9kd1z.jpg"
+  },
+  {
+    "id": 6,
+    "make": "Lexus",
+    "year": "2020",
+    "model": "LC 500",
+    "miles": "4 Miles",
+    "price": 106120,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645579705/shopping-cart-project/lc500_2022_tn94cg.jpg"
+  },
+  {
+    "id": 7,
+    "make": "Mclaren",
+    "year": "2016",
+    "model": "675 LT",
+    "miles": "2209 Miles",
+    "price": 749000,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645581420/shopping-cart-project/mclaren_aj62gr.jpg"
+  },
+  {
+    "id": 8,
+    "make": "Mercedes",
     "year": "2021",
-    "model": "IS350 F-Sport",
-    "miles": "11k Miles",
-    "price": 51998,
-    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645224461/shopping-cart-project/car4_a3ts6p.webp"
+    "model": "Black Series",
+    "miles": "372 Miles",
+    "price": 550000,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645581566/shopping-cart-project/mercBlackSeries_zjosmn.jpg"
+  }, 
+  {
+    "id": 9,
+    "make": "Porsche",
+    "year": "2019",
+    "model": "911",
+    "miles": "4216 Miles",
+    "price": 289000,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645581688/shopping-cart-project/porsche_trg3a7.jpg"
+  },
+  {
+    "id": 10,
+    "make": "Lamborghini",
+    "year": "2018",
+    "model": "Huracan LP640",
+    "miles": "23k Miles",
+    "price": 310000,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645582135/shopping-cart-project/lambo2_fwermq.jpg"
+  },
+  {
+    "id": 11,
+    "make": "Ferrari",
+    "year": "2014",
+    "model": "LaFerrari Coupe",
+    "miles": "73 Miles",
+    "price": 3899999,
+    "imageURL": "https://res.cloudinary.com/de2ymful4/image/upload/v1645582270/shopping-cart-project/laf_mt4wy7.jpg"
   }
 ]
