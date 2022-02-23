@@ -16,13 +16,10 @@ function Home() {
   return (
     <main className="Home">
       <section className="home-preview">
-        <h2>THE 2022 LX</h2>
+        <h2>Ferrari LaFerrari</h2>
         <div className="preview-buttonContainer">
           <Link to="/products" className="preview-button">
-            Browse Cars
-          </Link>
-          <Link to="/checkout" className="preview-button">
-            Checkout
+            Explore Collection
           </Link>
         </div>
       </section>

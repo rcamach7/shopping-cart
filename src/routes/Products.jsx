@@ -1,12 +1,89 @@
 import "../scss/Products.scss";
 import CarProduct from "../components/CarProduct";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faArrowDown19,
+  faArrowDown91,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Products(props) {
+  const [filteredProducts, setFilteredProducts] = useState(props.cars);
+
+  // If true, filters in ascending order, if false, filters in descending order.
+  const filterProducts = (ascending) => {
+    const filtered = [...filteredProducts];
+    if (ascending) {
+      filtered.sort((a, b) => {
+        if (a.price > b.price) {
+          return 1;
+        }
+        if (a.price < b.price) {
+          return -1;
+        }
+        return 0;
+      });
+    } else {
+      filtered.sort((a, b) => {
+        if (a.price < b.price) {
+          return 1;
+        }
+        if (a.price > b.price) {
+          return -1;
+        }
+        return 0;
+      });
+    }
+    setFilteredProducts(filtered);
+  };
+
   return (
     <main className="Products">
-      {props.cars.map((car, i) => (
-        <CarProduct key={i} car={car} updateCart={props.updateCart} />
-      ))}
+      <div className="filter-options">
+        <p>Price filter: </p>
+        <FontAwesomeIcon
+          icon={faArrowDown91}
+          className="filter-option"
+          onClick={() => filterProducts(false)}
+        />
+        <FontAwesomeIcon
+          icon={faArrowDown19}
+          className="filter-option"
+          onClick={() => filterProducts(true)}
+        />
+      </div>
+
+      <div className="products-container">
+        {filteredProducts.map((car, i) => (
+          <CarProduct key={i} car={car} updateCart={props.updateCart} />
+        ))}
+      </div>
+
+      <Link to="/checkout" className="checkout-container">
+        <div className="badge">
+          <FontAwesomeIcon icon={faShoppingCart} />
+          {props.cart.length > 0 ? (
+            <div className="cart-count">
+              <div className="mini-badge">
+                {props.cart.length > 0 ? props.cart.length : null}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      </Link>
+
+      <footer>
+        <FontAwesomeIcon className="icon" icon={faGithub} />
+        <FontAwesomeIcon className="icon" icon={faFacebook} />
+        <FontAwesomeIcon className="icon" icon={faLinkedin} />
+      </footer>
     </main>
   );
 }
