@@ -1,17 +1,15 @@
 .Checkout {
   height: calc(100vh - 60px);
   min-width: 320px;
-  padding-top: 5px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   .site-title {
-    width: clamp(320px, 95vw, 700px);
+    width: clamp(320px, 100vw, 1500px);
     padding: 10px 0 10px 0;
     color: white;
-    background-color: rgb(61, 61, 61);
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
   }
 
@@ -21,16 +19,17 @@
     align-items: center;
   }
   .cart-summary {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .summary-details {
-      width: clamp(320px, 95vw, 700px);
+      width: clamp(320px, 100vw, 1500px);
 
-      padding: 5px;
+      padding: 5px 5px 15px 5px;
       color: white;
-      background-color: rgb(61, 61, 61);
+      background-color: rgba(0, 0, 0, 0.7);
 
       h3,
       .details-total {
@@ -50,7 +49,6 @@
   }
 
   footer {
-    margin-top: auto;
     padding: 5px 0 5px 0;
     height: 30px;
     font-size: 12px;
@@ -70,7 +68,7 @@
 }
 
 .CarCheckout {
-  width: clamp(320px, 95vw, 700px);
+  width: clamp(320px, 95vw, 600px);
 
   border-radius: 5px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,

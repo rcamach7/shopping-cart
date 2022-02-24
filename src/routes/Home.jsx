@@ -16,7 +16,7 @@ function Home() {
   return (
     <main className="Home">
       <section className="home-preview">
-        <h2>Ferrari LaFerrari</h2>
+        <h2>Hypercar Heaven</h2>
         <div className="preview-buttonContainer">
           <Link to="/products" className="preview-button">
             Explore Collection

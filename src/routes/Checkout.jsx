@@ -1,11 +1,5 @@
 import "../scss/Checkout.scss";
 import CarCheckout from "../components/CarCheckout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default function Checkout(props) {
   const calculateSalesTax = () => {
@@ -61,12 +55,6 @@ export default function Checkout(props) {
           </div>
         </div>
       ) : null}
-
-      <footer>
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-      </footer>
     </div>
   );
 }
