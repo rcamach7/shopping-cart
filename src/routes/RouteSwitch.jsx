@@ -8,28 +8,7 @@ import { useState } from "react";
 
 export default function RouteSwitch() {
   const [cars] = useState(data);
-  const [cart, setCart] = useState([
-    {
-      id: 1,
-      make: "Lexus",
-      year: "1999",
-      model: "LS400",
-      miles: "100k Miles",
-      price: 5000,
-      imageURL:
-        "https://res.cloudinary.com/de2ymful4/image/upload/v1645224462/shopping-cart-project/car1_xbopkt.jpg",
-    },
-    {
-      id: 2,
-      make: "Lexus",
-      year: "2011",
-      model: "LFA",
-      miles: "800 Miles",
-      price: 500000,
-      imageURL:
-        "https://res.cloudinary.com/de2ymful4/image/upload/v1645224462/shopping-cart-project/car2_knz6go.jpg",
-    },
-  ]);
+  const [cart, setCart] = useState([data[4], data[6]]);
 
   const updateCart = (car, toAdd) => {
     // If field is passed in as true, the update function is to add to cart.
