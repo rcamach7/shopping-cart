@@ -1,5 +1,13 @@
 import "../scss/Checkout.scss";
 import CarCheckout from "../components/CarCheckout";
+import {
+  faCcVisa,
+  faCcApplePay,
+  faCcDiscover,
+  faCcMastercard,
+  faCcAmazonPay,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Checkout(props) {
   const calculateSalesTax = () => {
@@ -38,20 +46,34 @@ export default function Checkout(props) {
       </div>
 
       {props.cart.length > 0 ? (
-        <div className="cart-summary">
+        <div className="cart-summary-container">
           <div className="summary-details">
             <h3>Order Details</h3>
-            <p>
-              ({props.cart.length}) Registration Fee(s){" "}
-              {formatCurrency.format(750 * props.cart.length)}
+            <p className="details-items">
+              <p>({props.cart.length}) Registration Fee(s)</p>
+              <span>{formatCurrency.format(750 * props.cart.length)}</span>
             </p>
-            <p>
-              CA 7.5% Sales Tax: {formatCurrency.format(calculateSalesTax())}
-            </p>
-            <p className="details-total">
+            <div className="details-items">
+              <p>CA 7.5% Sales Tax:</p>
+              <span>{formatCurrency.format(calculateSalesTax())}</span>
+            </div>
+            <div className="details-total">
               Total: {formatCurrency.format(calculateTotalPrice())}
-            </p>
-            <button>Purchase</button>
+            </div>
+            <button
+              onClick={() => alert("Thank you, your order has been placed")}
+            >
+              Purchase
+            </button>
+
+            <div className="payments-accepted">
+              <p>Payments Accepted</p>
+              <FontAwesomeIcon icon={faCcVisa} />
+              <FontAwesomeIcon icon={faCcApplePay} />
+              <FontAwesomeIcon icon={faCcDiscover} />
+              <FontAwesomeIcon icon={faCcMastercard} />
+              <FontAwesomeIcon icon={faCcAmazonPay} />
+            </div>
           </div>
         </div>
       ) : null}

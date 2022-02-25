@@ -6,10 +6,7 @@
   flex-direction: column;
 
   .site-title {
-    width: clamp(320px, 100vw, 1500px);
     padding: 10px 0 10px 0;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
   }
 
@@ -17,27 +14,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+
+    padding-bottom: 10px;
   }
-  .cart-summary {
-    margin-top: auto;
+
+  .cart-summary-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .summary-details {
-      width: clamp(320px, 100vw, 1500px);
+      width: clamp(320px, 95vw, 600px);
 
       padding: 5px 5px 15px 5px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgb(247, 247, 247);
 
       h3,
       .details-total {
         text-align: center;
         padding: 5px 0 5px 0;
-        color: white;
+        font-weight: 800;
       }
+      .details-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .payments-accepted {
+        padding: 10px 5px 10px 5px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 25px;
+        p {
+          font-size: 15px;
+        }
+      }
+
       button {
+        font-size: 20px;
         width: 100%;
         cursor: pointer;
         border: none;
@@ -73,6 +91,7 @@
   border-radius: 5px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: rgb(247, 247, 247);
 
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +114,7 @@
       justify-content: center;
     }
     .carPrice {
+      font-weight: 900;
       padding-right: 5px;
       margin-left: auto;
 
@@ -102,13 +122,12 @@
       justify-content: center;
       align-items: center;
     }
-  }
-  button {
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    padding: 2px 0 2px 0;
-    color: white;
-    background-color: rgb(243, 117, 117);
+    button {
+      cursor: pointer;
+      border: none;
+      padding: 0 5px 0 5px;
+      color: white;
+      background-color: rgb(243, 117, 117);
+    }
   }
 }
