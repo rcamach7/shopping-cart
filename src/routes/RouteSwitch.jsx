@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function RouteSwitch() {
   const [cars] = useState(data);
-  const [cart, setCart] = useState([data[4], data[6]]);
+  const [cart, setCart] = useState([]);
 
   const updateCart = (car, toAdd) => {
     // If field is passed in as true, the update function is to add to cart.

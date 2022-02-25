@@ -20,7 +20,7 @@ export default function Footer() {
 
       <div className="company-links">
         <div className="links-details">
-          <h4>iLusso</h4>
+          <h4>Royalty</h4>
           <p>About us</p>
           <p>FAQ</p>
         </div>

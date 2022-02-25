@@ -1,7 +1,7 @@
 import "../scss/Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
