@@ -73,24 +73,6 @@ a {
       background-color: darkgray;
     }
   }
-
-  footer {
-    margin-top: auto;
-    height: 30px;
-    font-size: 12px;
-
-    background-color: white;
-    color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    .icon {
-      color: grey;
-      cursor: pointer;
-    }
-  }
 }
 
 @media (min-width: 600px) {

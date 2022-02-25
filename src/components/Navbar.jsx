@@ -58,7 +58,7 @@ function Navbar(props) {
               className="dropdown-item"
               onClick={toggleDropDown}
             >
-              My Cart
+              Checkout
             </Link>
           </ul>
         </nav>

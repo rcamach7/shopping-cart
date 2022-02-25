@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Checkout(props) {
   const calculateSalesTax = () => {
@@ -87,6 +88,8 @@ export default function Checkout(props) {
           </div>
         </div>
       )}
+
+      <Footer />
     </div>
   );
 }

@@ -6,11 +6,7 @@ import {
   faScrewdriverWrench,
   faFileSignature,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -39,11 +35,7 @@ function Home() {
         </div>
       </section>
 
-      <footer>
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-      </footer>
+      <Footer />
     </main>
   );
 }
