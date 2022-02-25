@@ -2,6 +2,8 @@
   width: 100vw;
   padding: 10px;
   margin-top: auto;
+
+  border-top: solid grey 1px;
   background-color: rgb(247, 247, 247);
   text-align: center;
 
@@ -19,6 +21,7 @@
 
     .input-container {
       display: flex;
+      gap: 2px;
       .submit-email {
         padding: 5px;
         background-color: black;

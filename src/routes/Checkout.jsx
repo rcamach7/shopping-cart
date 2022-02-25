@@ -20,12 +20,17 @@ export default function Checkout(props) {
     return salesTax;
   };
 
-  // Assumes 7.5% sales tax, 750 per vehicle registration fees plus the price of the car.
-  const calculateTotalPrice = () => {
+  const calculateCartPrice = () => {
     let total = 0;
     props.cart.forEach((car) => {
       total += car.price;
     });
+    return total;
+  };
+
+  // Assumes 7.5% sales tax, 750 per vehicle registration fees plus the price of the car.
+  const calculateTotalPrice = () => {
+    let total = calculateCartPrice();
     total += calculateSalesTax() + 750 * props.cart.length;
     return total;
   };
@@ -38,7 +43,9 @@ export default function Checkout(props) {
 
   return (
     <div className="Checkout">
-      <h3 className="site-title">View And Edit Cart</h3>
+      <div className="site-title">
+        <h3>View And Edit Cart</h3>
+      </div>
       <div className="items-container">
         {props.cart.map((cartCar, i) => {
           return (
@@ -51,17 +58,24 @@ export default function Checkout(props) {
         <div className="cart-summary-container">
           <div className="summary-details">
             <h3>Order Details</h3>
+
             <div className="details-items">
-              <p>({props.cart.length}) Registration Fee(s)</p>
+              <p>Vehicle(s) subtotal:</p>
+              <span>{formatCurrency.format(calculateCartPrice())}</span>
+            </div>
+            <div className="details-items">
+              <p>({props.cart.length}) Registration Fee(s):</p>
               <span>{formatCurrency.format(750 * props.cart.length)}</span>
             </div>
             <div className="details-items">
               <p>CA 7.5% Sales Tax:</p>
               <span>{formatCurrency.format(calculateSalesTax())}</span>
             </div>
+
             <div className="details-total">
               Total: {formatCurrency.format(calculateTotalPrice())}
             </div>
+
             <button
               onClick={() => alert("Thank you, your order has been placed")}
             >

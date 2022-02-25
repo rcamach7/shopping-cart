@@ -19,8 +19,7 @@ a {
     width: clamp(320px, 100vw, 600px);
     min-height: 400px;
 
-    // background-image: url("../assets/lexusLx.webp");
-    background-image: url("../assets/laf_min.jpeg");
+    background-image: url("../assets/supercars.jpeg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -29,7 +28,9 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    h2 {
+    h1 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      // color: black;
       font-size: 25px;
       margin-top: 10px;
       font-weight: 500;
@@ -68,9 +69,11 @@ a {
         margin-bottom: 10px;
       }
     }
-    div:hover {
-      cursor: pointer;
-      background-color: darkgray;
+    @media (hover: hover) {
+      div:hover {
+        cursor: pointer;
+        background-color: darkgray;
+      }
     }
   }
 }
@@ -81,10 +84,9 @@ a {
       width: 100%;
       height: clamp(250px, 100vh, 500px);
       // background-image: url("../assets/lexusLx-l.webp");
-      background-image: url("../assets/laf.jpeg");
+      background-image: url("../assets/supercars_large.jpeg");
 
-      h2 {
-        background-color: rgba(255, 255, 255, 0.5);
+      h1 {
         color: black;
         border-radius: 10px;
         font-size: 35px;

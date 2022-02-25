@@ -1,10 +1,6 @@
 import "../scss/Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -30,8 +26,12 @@ export default function Footer() {
         </div>
         <div className="links-socials">
           <h4>Contact Us</h4>
-          <p>Github</p>
-          <p>Facebook</p>
+          <p>
+            <FontAwesomeIcon icon={faGithub} />
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </p>
         </div>
       </div>
     </div>
