@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.fe145dd1.css",
-    "main.js": "/shopping-cart/static/js/main.6932256a.js",
+    "main.css": "/shopping-cart/static/css/main.9f078e4c.css",
+    "main.js": "/shopping-cart/static/js/main.6dbf0b37.js",
     "static/media/supercars_large.jpeg": "/shopping-cart/static/media/supercars_large.d7e5f45499c827947e42.jpeg",
     "static/media/supercars.jpeg": "/shopping-cart/static/media/supercars.715b8a7546f47b34a201.jpeg",
-    "static/media/logo.svg": "/shopping-cart/static/media/logo.6fd02d71d86bec5f754621c14f2b201d.svg",
+    "static/media/logo.png": "/shopping-cart/static/media/logo.f4e88538b82070d5af69.png",
     "index.html": "/shopping-cart/index.html",
-    "main.fe145dd1.css.map": "/shopping-cart/static/css/main.fe145dd1.css.map",
-    "main.6932256a.js.map": "/shopping-cart/static/js/main.6932256a.js.map"
+    "main.9f078e4c.css.map": "/shopping-cart/static/css/main.9f078e4c.css.map",
+    "main.6dbf0b37.js.map": "/shopping-cart/static/js/main.6dbf0b37.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe145dd1.css",
-    "static/js/main.6932256a.js"
+    "static/css/main.9f078e4c.css",
+    "static/js/main.6dbf0b37.js"
   ]
 }
