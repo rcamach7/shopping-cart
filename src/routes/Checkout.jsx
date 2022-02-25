@@ -49,10 +49,10 @@ export default function Checkout(props) {
         <div className="cart-summary-container">
           <div className="summary-details">
             <h3>Order Details</h3>
-            <p className="details-items">
+            <div className="details-items">
               <p>({props.cart.length}) Registration Fee(s)</p>
               <span>{formatCurrency.format(750 * props.cart.length)}</span>
-            </p>
+            </div>
             <div className="details-items">
               <p>CA 7.5% Sales Tax:</p>
               <span>{formatCurrency.format(calculateSalesTax())}</span>

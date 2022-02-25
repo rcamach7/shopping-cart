@@ -56,32 +56,40 @@
   }
 
   // Dropdown menu displayed when hamburger icon clicked
-  .dropDown {
+  .dropdown-backdrop {
+    height: calc(100vh - 60px);
+    width: 100%;
     display: none;
     position: absolute;
-    width: 100%;
-    height: min-content;
 
-    background-color: white;
+    background-color: rgb(0, 0, 0, 0.7);
 
-    ul {
-      display: flex;
-      flex-direction: column;
-    }
-    .dropDown-item {
+    .dropdown {
+      position: relative;
       width: 100%;
-      text-align: center;
-      padding: 25px 0 25px 0;
+      height: min-content;
 
-      cursor: pointer;
-      border-bottom: solid grey 1px;
-    }
-    .dropDown-item:hover {
-      background-color: rgb(223, 223, 223);
-    }
+      background-color: white;
 
-    animation: drop-in ease-in-out 300ms forwards;
-    transform-origin: top center;
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+      .dropdown-item {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 25px 0;
+
+        cursor: pointer;
+        border-bottom: solid grey 1px;
+      }
+      .dropdown-item:hover {
+        background-color: rgb(223, 223, 223);
+      }
+
+      animation: drop-in ease-in-out 300ms forwards;
+      transform-origin: top center;
+    }
   }
   @keyframes drop-in {
     0% {

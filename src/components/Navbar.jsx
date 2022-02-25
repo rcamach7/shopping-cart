@@ -35,32 +35,34 @@ function Navbar(props) {
         </li>
       </ul>
 
-      <nav ref={dropDownRef} className="dropDown">
-        <ul>
-          <Link
-            to="/shopping-cart"
-            className="dropDown-item"
-            style={{ borderTop: "solid grey 1px" }}
-            onClick={toggleDropDown}
-          >
-            Homepage
-          </Link>
-          <Link
-            to="/products"
-            className="dropDown-item"
-            onClick={toggleDropDown}
-          >
-            Browse Collection
-          </Link>
-          <Link
-            to="/checkout"
-            className="dropDown-item"
-            onClick={toggleDropDown}
-          >
-            My Cart
-          </Link>
-        </ul>
-      </nav>
+      <div ref={dropDownRef} className="dropdown-backdrop">
+        <nav className="dropdown">
+          <ul>
+            <Link
+              to="/shopping-cart"
+              className="dropdown-item"
+              style={{ borderTop: "solid grey 1px" }}
+              onClick={toggleDropDown}
+            >
+              Homepage
+            </Link>
+            <Link
+              to="/products"
+              className="dropdown-item"
+              onClick={toggleDropDown}
+            >
+              Browse Collection
+            </Link>
+            <Link
+              to="/checkout"
+              className="dropdown-item"
+              onClick={toggleDropDown}
+            >
+              My Cart
+            </Link>
+          </ul>
+        </nav>
+      </div>
     </nav>
   );
 }
