@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 
     .options-price,
     .options-make {
@@ -46,13 +46,13 @@
     animation: pulse 5s infinite;
 
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
 
     .badge {
-      height: 40px;
-      width: 40px;
+      height: 50px;
+      width: 50px;
 
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 600;
 
       border-radius: 9999px;
@@ -70,9 +70,9 @@
         right: 7px;
 
         .mini-badge {
-          height: 10px;
-          width: 10px;
-          font-size: 9px;
+          height: 15px;
+          width: 15px;
+          font-size: 12px;
           font-weight: 600;
 
           background-color: rgb(233, 109, 108);
@@ -96,24 +96,6 @@
     }
     100% {
       transform: scale(1);
-    }
-  }
-
-  footer {
-    margin-top: auto;
-    height: 30px;
-    font-size: 12px;
-
-    background-color: white;
-    color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    .icon {
-      color: grey;
-      cursor: pointer;
     }
   }
 }
@@ -172,7 +154,10 @@
   }
   transition: transform 0.5s;
 }
-.CarProduct:hover {
-  transform: scale(1.075);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+@media (hover: hover) {
+  .CarProduct:hover {
+    transform: scale(1.075);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }

@@ -6,17 +6,13 @@ import {
   faScrewdriverWrench,
   faFileSignature,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <main className="Home">
       <section className="home-preview">
-        <h2>Hypercar Heaven</h2>
+        <h1>Exotic Car Dealer</h1>
         <div className="preview-buttonContainer">
           <Link to="/products" className="preview-button">
             Explore Collection
@@ -39,11 +35,7 @@ function Home() {
         </div>
       </section>
 
-      <footer>
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-      </footer>
+      <Footer />
     </main>
   );
 }

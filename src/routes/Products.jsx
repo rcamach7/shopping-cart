@@ -1,11 +1,7 @@
 import "../scss/Products.scss";
 import CarProduct from "../components/CarProduct";
+import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 import {
   faArrowDown19,
   faArrowDown91,
@@ -110,11 +106,7 @@ function Products(props) {
         </div>
       </Link>
 
-      <footer>
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-      </footer>
+      <Footer />
     </main>
   );
 }
