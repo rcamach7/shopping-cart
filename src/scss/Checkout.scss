@@ -66,6 +66,33 @@
     }
   }
 
+  .empty-cart {
+    display: flex;
+    justify-content: center;
+
+    .continue-shopping {
+      width: clamp(300px, 95vw, 600px);
+
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(247, 247, 247);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 5px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .products-link {
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+
   footer {
     padding: 5px 0 5px 0;
     height: 30px;

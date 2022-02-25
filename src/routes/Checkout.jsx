@@ -8,6 +8,7 @@ import {
   faCcAmazonPay,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 export default function Checkout(props) {
   const calculateSalesTax = () => {
@@ -76,7 +77,16 @@ export default function Checkout(props) {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : (
+        <div className="empty-cart">
+          <div className="continue-shopping">
+            <p>Oops, looks like your cart is empty!</p>
+            <Link className="products-link" to="/products">
+              Continue shopping!
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
