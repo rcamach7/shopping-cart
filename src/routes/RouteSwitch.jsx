@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Products from "./Products";
 import Navbar from "../components/Navbar";
@@ -53,6 +53,7 @@ export default function RouteSwitch() {
           path="/checkout"
           element={<Checkout cars={cars} cart={cart} updateCart={updateCart} />}
         />
+        <Route path="*" element={<Navigate to="/shopping-cart" />} />
       </Routes>
     </BrowserRouter>
   );
