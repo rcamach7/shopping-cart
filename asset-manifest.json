@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.f2c27d43.css",
-    "main.js": "/shopping-cart/static/js/main.827e1c6d.js",
+    "main.js": "/shopping-cart/static/js/main.b7efe2a9.js",
     "static/media/supercars.jpeg": "/shopping-cart/static/media/supercars.715b8a7546f47b34a201.jpeg",
     "static/media/supercars_large.jpg": "/shopping-cart/static/media/supercars_large.363d1c2edc9b2675c255.jpg",
     "static/media/logo.png": "/shopping-cart/static/media/logo.f4e88538b82070d5af69.png",
     "index.html": "/shopping-cart/index.html",
     "main.f2c27d43.css.map": "/shopping-cart/static/css/main.f2c27d43.css.map",
-    "main.827e1c6d.js.map": "/shopping-cart/static/js/main.827e1c6d.js.map"
+    "main.b7efe2a9.js.map": "/shopping-cart/static/js/main.b7efe2a9.js.map"
   },
   "entrypoints": [
     "static/css/main.f2c27d43.css",
-    "static/js/main.827e1c6d.js"
+    "static/js/main.b7efe2a9.js"
   ]
 }
