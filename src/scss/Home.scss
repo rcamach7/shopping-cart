@@ -30,7 +30,7 @@ a {
     align-items: center;
     h1 {
       font-family: Georgia, "Times New Roman", Times, serif;
-      background-color: rgb(0, 0, 0, 0.5);
+      // background-color: rgb(0, 0, 0, 0.5);
       padding: 2px;
       border-radius: 2.5px;
       font-size: 25px;
@@ -85,7 +85,7 @@ a {
     .home-preview {
       width: 100%;
       height: clamp(250px, 100vh, 500px);
-      background-image: url("../assets/supercars_large.jpeg");
+      background-image: url("../assets/supercars_large.jpg");
 
       h1 {
         border-radius: 2.5px;

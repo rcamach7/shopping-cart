@@ -31,3 +31,9 @@ npm install
 npm run start
 ``
 ```
+
+#### Improvements to be implemented
+
+- Add loading symbol while images are being retrieved from the products page
+- Redirect users to homepage while trying to access a URL that does not exist
+-
